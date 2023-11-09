@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <ImageView
+        android:id="@+id/imageViewPlayerChoice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Player's choice"/>
+
+    <ImageView
+        android:id="@+id/imageViewComputerChoice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imageViewPlayerChoice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Computer's choice"/>
+
+    <Button
+        android:id="@+id/buttonRock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewComputerChoice"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="Камень" />
+
+    <Button
+        android:id="@+id/buttonPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewComputerChoice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Бумага" />
+
+    <Button
+        android:id="@+id/buttonScissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewComputerChoice"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Ножницы" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="18sp" />
+
+</RelativeLayout>

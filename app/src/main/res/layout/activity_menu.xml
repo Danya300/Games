@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCF6B1">
+
+    <!-- Название приложения -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ИГРОВОЙ КАЛЕЙДОСКОП"
+        android:layout_gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
+        android:textColor="#A9E5BB"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Текст приветствия -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать, выберите игру:"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textColor="#A9E5BB"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Кнопка "Угадай число" -->
+    <Button
+        android:id="@+id/button_guess_number"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:text="Угадай число"
+        android:onClick="startGame"
+        android:background="#FCF6B1"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:textColor="#2D1E2F"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Кнопка "Камень, ножницы, бумага" -->
+    <Button
+        android:id="@+id/button_cam_nog_bum"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:text="Камень, ножницы, бумага"
+        android:gravity="center_vertical"
+        android:onClick="startGame"
+        android:textSize="24sp"
+        android:background="#FCF6B1"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:textColor="#2D1E2F"
+        android:shadowColor="#2D1E2F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textAllCaps="true"
+        android:elevation="6dp"
+        android:stateListAnimator="@null"
+        android:translationZ="4dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
